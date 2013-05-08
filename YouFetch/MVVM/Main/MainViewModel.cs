@@ -51,7 +51,7 @@ namespace YouFetch
         public event EventHandler<NotifyArgs> OnBadUrlOrVideoId;
         public event EventHandler<NotifyArgs> OnClose;
         public event EventHandler<NotifyArgs<string>> OnOpen;
-        public event EventHandler<NotifyArgs> OnHelp;
+        public event EventHandler<NotifyArgs> OnAbout;
         public event EventHandler<NotifyArgs<string>> OnFetch;
         public event EventHandler<NotifyArgs<string>> OnNoVideoInfos;
         public event EventHandler<NotifyArgs<Exception>> OnError;
@@ -268,7 +268,7 @@ namespace YouFetch
                         {
                             var videoId = GetVideoId(UrlOrVideoId);
 
-                            videoInfos = await YouTubeHelper.GetVideoInfos(videoId);
+                            videoInfos = await YouTubeAbouter.GetVideoInfos(videoId);
 
                             if (videoInfos.Count == 0)
                             {
@@ -324,11 +324,11 @@ namespace YouFetch
             }
         }
 
-        public DelegateCommand HelpCommand
+        public DelegateCommand AboutCommand
         {
             get
             {
-                return new DelegateCommand(() => Notify(OnHelp));
+                return new DelegateCommand(() => Notify(OnAbout));
             }
         }
 

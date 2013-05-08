@@ -128,10 +128,10 @@
                     Width="50"
                     Margin="2,0,2,0"
                     Command="{Binding OpenCommand}" />
-            <Button Content="_Help"
+            <Button Content="_About"
                     Width="50"
                     Margin="2,0,2,0"
-                    Command="{Binding HelpCommand}" />
+                    Command="{Binding AboutCommand}" />
             <Button Content="_Close"
                     Width="50"
                     Margin="2,0,0,0"

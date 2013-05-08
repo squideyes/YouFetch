@@ -79,8 +79,8 @@ namespace YouFetch
                 MessageBox.Show(view, string.Format(NOVIDEOINFOS, e.Data),
                 "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
 
-            viewModel.OnHelp += (s, e) =>
-                Process.Start("http://squideyes.com");
+            viewModel.OnAbout += (s, e) =>
+                Process.Start("http://squideyes.com/2013/05/08/url-hunting/");
 
             viewModel.OnOpen += (s, e) => Process.Start(e.Data);
 

@@ -33,7 +33,7 @@ using System.Diagnostics.Contracts;
 
 namespace YouFetch
 {
-    public static class BindingHelper
+    public static class BindingAbouter
     {
         public static void NotifyPropertyChanged<M, R>(this M model, Expression<Func<M, R>> property,
             PropertyChangedEventHandler propertyChanged, IDispatcher dispatcher)

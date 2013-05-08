@@ -99,7 +99,7 @@ namespace YouFetch
         {
             Contract.Requires(property != null);
 
-            BindingHelper.NotifyPropertyChanged(property, this, PropertyChanged, Dispatcher);
+            BindingAbouter.NotifyPropertyChanged(property, this, PropertyChanged, Dispatcher);
         }
     }
 }

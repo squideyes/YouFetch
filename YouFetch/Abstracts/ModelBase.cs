@@ -41,7 +41,7 @@ namespace YouFetch
         {
             Contract.Requires(property != null);
 
-            BindingHelper.NotifyPropertyChanged(
+            BindingAbouter.NotifyPropertyChanged(
                 property, this, PropertyChanged, Dispatcher);
         }
     }

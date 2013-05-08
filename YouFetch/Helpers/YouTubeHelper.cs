@@ -35,7 +35,7 @@ using System.Windows;
 
 namespace YouFetch
 {
-    public static class YouTubeHelper
+    public static class YouTubeAbouter
     {
         public async static Task<List<VideoInfo>> GetVideoInfos(string videoId)
         {
